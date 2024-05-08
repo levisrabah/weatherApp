@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react"; // Importing necessary hooks from React
 import Search from "./Search"; // Importing the Search component
 import Alerts from "./Alerts";
-import NavBar from "./NavBar";
-import "../styles/App.css";
-
 
 function Weather() {
     const [search, setSearch] = useState(''); // State to manage the search query
@@ -108,7 +105,6 @@ function Weather() {
 
     return (
         <div>
-            <NavBar />
             <Search
                 search={search}
                 setSearch={setSearch}
