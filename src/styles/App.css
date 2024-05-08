@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  margin: 50px auto 0;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 20px;
+  height: 5000px;
+  padding: 20px 15px;
+  background:  #30197d
+}
+
+.search-engine {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.search-engine input {
+  width: 70%;
+  height: 45px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 2px 15px;
+  font-size: 16px;
+  outline: none;
+  background-color: #ffffff;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.search-engine button {
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 15px;
+  margin-bottom: 40px;
+}
+.city-name{
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.loading{
+  font-size: 60px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+.date{
+  font-size: 20px;
+  font-weight: 500;
+  font-style: inherit;
+  color: #ffffff;
+}
+.temp{
+  font-size: 70px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.description{
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.weather-info{
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.column{
+  display: flex;
+  align-items: center;
+  line-height: 1px;
+}
+.unit-selector {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.unit-selector label {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.unit-selector input {
+  margin-right: 5px;
+}
+.forecast{
+  color: #ffffff;
+}
+
+.unit-selector label{
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.temperature-unit-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.temperature-unit-selector label {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.temperature-unit-selector input[type="radio"] {
+  margin-right: 5px;
+}

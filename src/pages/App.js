@@ -1,13 +1,15 @@
-import "../App.css";
+import "../styles/App.css";
 import Weather from '../components/Weather';
-
+import NavBar from "../components/NavBar";
 
 function App() {
-  return (
-    <div className="App">
-      <Weather/>
-    </div>
-  );
+    return (
+        <div>
+            <NavBar />
+            <Weather />
+          
+        </div>
+    );
 }
 
 export default App;

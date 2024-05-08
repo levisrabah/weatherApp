@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
+import NavBar from "../components/NavBar"
 import "../styles/Forecast.css"
 
 function Forecast() {
@@ -94,54 +95,55 @@ function Forecast() {
 
   return (
     <div className="forecast">
-      <h1>Forecast</h1>
-      <Search
-        search={search}
-        setSearch={setSearch}
-        handleSearch={handleSearch}
-      />
-      {loading ? (
-        <div className="loading">Loading...</div>
-      ) : error ? (
-        <div className="error">{error}</div>
-      ) : forecastData ? (
-        <div>
-          <div className="city-name">
-            {forecastData.city.name}, {forecastData.city.country}
-          </div>
-          {/* Daily Summary */}
-          <div className="daily-summary">
-            {Object.entries(groupForecastByDay(forecastData)).map(
-              ([day, forecasts]) => (
-                <div key={day} className="forecast-summary">
-                  <h2>{new Date(day).toDateString()}</h2>
-                  <div className="forecast-items">
-                    {forecasts.map((item, index) => (
-                      <div key={index} className="forecast-item">
-                        <div>
-                          {new Date(item.dt * 1000).toLocaleTimeString([], {
-                            hour: "2-digit",
-                            minute: "2-digit",
-                          })}
-                        </div>
-                        <div>
-                          Temperature: {convertTemperature(item.main.temp)}°
-                        </div>
-                        <img
-                          src={getWeatherIconUrl(item.weather[0].icon)}
-                          alt="Weather Icon"
-                        />
-                        <div>{item.weather[0].description}</div>
-                      </div>
-                    ))}
+  <h1>Forecast</h1>
+  <NavBar />
+  <Search
+    search={search}
+    setSearch={setSearch}
+    handleSearch={handleSearch}
+  />
+  {loading ? (
+    <div className="loading">Loading...</div>
+  ) : error ? (
+    <div className="error">{error}</div>
+  ) : forecastData ? (
+    <div>
+      <div className="city-name">
+        {forecastData.city.name}, {forecastData.city.country}
+      </div>
+      {/* Daily Summary */}
+      <div className="daily-summary">
+        {Object.entries(groupForecastByDay(forecastData)).map(
+          ([day, forecasts]) => (
+            <div key={day} className="forecast-summary">
+              <h2>{new Date(day).toDateString()}</h2>
+              <div className="forecast-items">
+                {forecasts.map((item, index) => (
+                  <div key={index} className="forecast-item">
+                    <div>
+                      {new Date(item.dt * 1000).toLocaleTimeString([], {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      })}
+                    </div>
+                    <div>
+                      Temperature: {convertTemperature(item.main.temp)}°
+                    </div>
+                    <img
+                      src={getWeatherIconUrl(item.weather[0].icon)}
+                      alt="Weather Icon"
+                    />
+                    <div>{item.weather[0].description}</div>
                   </div>
-                </div>
-              )
-            )}
-          </div>
-        </div>
-      ) : null}
+                ))}
+              </div>
+            </div>
+          )
+        )}
+      </div>
     </div>
+  ) : null}
+</div>
   );
 }
 
