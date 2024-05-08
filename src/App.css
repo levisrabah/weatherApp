@@ -65,7 +65,7 @@ body {
   margin-bottom: 10px;
   font-size: xx-large;
   font-weight: bolder;
-  color: #ffffff;
+  color: black;
 }
 .loading{
   font-size: 60px;
@@ -76,7 +76,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   font-style: inherit;
-  color: #ffffff;
+  color: black;
 }
 .temp{
   font-size: 70px;

@@ -3,9 +3,6 @@
     background-color: #f4f4f4;
     border-radius: 5px;
     margin-top: 40px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./tom-barrett-hgGplX3PFBg-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
   }
 
   .air-pollution-container h1 {

@@ -57,3 +57,12 @@
      margin-bottom: 5px;
    }
    
+   .forecast-summary {
+    color:black;
+    text-align: center;
+   }
+
+   .daily-summary {
+    color:black;
+    text-align: center;
+   }
