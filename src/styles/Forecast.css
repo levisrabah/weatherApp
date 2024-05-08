@@ -1,33 +1,19 @@
 
-.forecast::before {
-    /* content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-image: url('./tom-barrett-hgGplX3PFBg-unsplash.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
-     /*background-size: cover; /* Ensure the image covers the entire container */
-     /*background-position: center; /* Center the background image */
-     /*opacity: 0.5; /* Adjust the opacity for the faded effect */
-   }
-   
-   .forecast {
+.forecast {
      background-color: rgba(255, 255, 255, 0.028);
    }
  
  .forecast-items {
      display: flex;
-     justify-content: space-between; /* Evenly space out the items horizontally */
-     margin-top: 5px; /* Reduce top margin */
-     margin-bottom: 5px; /* Reduce bottom margin */
+     justify-content: space-between; 
+     margin-top: 5px; 
+     margin-bottom: 5px; 
      color: black;
    }
    
    .forecast-item {
      width: 220px;
-     height: 220px; /* Set height to match width for a square shape */
-     display: flex;
+     height: 220px; 
      flex-direction: column;
      align-items: center;
      justify-content: space-between;
@@ -43,8 +29,8 @@
    }
    
    .forecast-item:hover {
-     transform: translateY(-5px); /* Reduce the hover translation */
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduce the strength of the box shadow */
+     transform: translateY(-5px); 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
    }
    
    .forecast-item > div {

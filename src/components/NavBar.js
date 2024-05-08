@@ -18,7 +18,7 @@ import { Switch } from 'react-router-dom';
                             <Link to="/airpollution" className="navlink">Airpollution</Link> {/* Apply the "navlink" class */}
                         </li>
                         <li>
-                            <Link to="/saved-location" className="navlink">Saved Locations</Link> {/* Apply the "navlink" class */}
+                            <Link to="/saved-locations" className="navlink">Saved Locations</Link> {/* Apply the "navlink" class */}
                         </li>
                     </ul>
                 </nav> 
