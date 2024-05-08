@@ -1,12 +1,37 @@
 import React, { useState, useEffect } from 'react';
-import Search from '../components/Search';
-import "../styles/AirPollution.css"
+import Search from '../components/Search'
+import '../styles/AirPollution.css';
 
 const AirPollution = () => {
     const [search, setSearch] = useState('');
     const [city, setCity] = useState(null);
     const [aqiData, setAqiData] = useState(null);
     const apiKey = "075335bc4fb43ae67a55693444276c56";
+
+    useEffect(() => {
+        if (search.trim() !== '') {
+            const fetchWeatherData = async (location) => {
+                try {
+                    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`);
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch weather data');
+                    }
+                    const data = await response.json();
+                    setCity({ name: data.name, lat: data.coord.lat, lon: data.coord.lon });
+                } catch (error) {
+                    console.error(error);
+                }
+            };
+
+            // Trigger search function after delay
+            const delay = setTimeout(() => {
+                fetchWeatherData(search);
+            }, 500); // Set the delay (e.g., 500 milliseconds)
+
+            // Cleanup function to clear timeout on state change
+            return () => clearTimeout(delay);
+        }
+    }, [search, apiKey]);
 
     useEffect(() => {
         if (city) {
@@ -25,19 +50,6 @@ const AirPollution = () => {
             fetchAqiData();
         }
     }, [city, apiKey]);
-
-    const handleSearch = async () => {
-        try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}`);
-            if (!response.ok) {
-                throw new Error('Failed to fetch weather data');
-            }
-            const data = await response.json();
-            setCity({ name: data.name, lat: data.coord.lat, lon: data.coord.lon });
-        } catch (error) {
-            console.error(error);
-        }
-    };
 
     // Function to determine AQI category based on AQI value
     const getAqiCategory = (aqiValue) => {
@@ -59,7 +71,7 @@ const AirPollution = () => {
     return (
         <div className="air-pollution-container">
             <h1>Air Pollution Information</h1>
-            <Search search={search} setSearch={setSearch} handleSearch={handleSearch} />
+            <Search search={search} setSearch={setSearch} />
             {city && (
                 <div className="city-info">
                     <h2 className="aqi-data-heading">Air Quality Index (AQI) for {city.name}</h2>
@@ -72,29 +84,28 @@ const AirPollution = () => {
                             <p>Nitrogen Dioxide (NO2): {aqiData.list[0].components.no2} µg/m³</p>
                             <p>AQI Category: <span className="aqi-category">{getAqiCategory(aqiData.list[0].main.aqi)}</span></p>
                         </div>
-                        
                     ) : (
                         <p>Loading...</p>
                     )}
                 </div>
             )}
-             <div className="info-section">
-                        <h3>Understanding Air Pollution</h3>
-                        <p>
-                            The Air Quality Index (AQI) provides information about the quality of the air we breathe.
-                            It measures the concentration of pollutants such as PM2.5, PM10, Ozone, and Nitrogen Dioxide.
-                            Each pollutant has different health effects, and the AQI categorizes air quality into levels ranging from "Good" to "Hazardous."
-                        </p>
-                        <p>
-                            It's essential to pay attention to the AQI and take precautions when air quality is poor, such as reducing outdoor activities and wearing masks.
-                        </p>
-                        <p>
-                            The data displayed here is sourced from reputable environmental monitoring stations and is updated regularly to provide accurate information.
-                        </p>
-                        <p>
-                            For more detailed information on air quality and pollution control measures, you can visit environmental websites or consult local authorities.
-                        </p>
-                    </div>
+            <div className="info-section">
+                <h3>Understanding Air Pollution</h3>
+                <p>
+                    The Air Quality Index (AQI) provides information about the quality of the air we breathe.
+                    It measures the concentration of pollutants such as PM2.5, PM10, Ozone, and Nitrogen Dioxide.
+                    Each pollutant has different health effects, and the AQI categorizes air quality into levels ranging from "Good" to "Hazardous."
+                </p>
+                <p>
+                    It's essential to pay attention to the AQI and take precautions when air quality is poor, such as reducing outdoor activities and wearing masks.
+                </p>
+                <p>
+                    The data displayed here is sourced from reputable environmental monitoring stations and is updated regularly to provide accurate information.
+                </p>
+                <p>
+                    For more detailed information on air quality and pollution control measures, you can visit environmental websites or consult local authorities.
+                </p>
+            </div>
         </div>
     );
 };
