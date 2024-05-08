@@ -1,5 +1,7 @@
+import "../styles/SavedLocations.css";
 import React, { useEffect, useState } from "react";
 import PlaceCategory from "../components/PlaceCategory";
+
 
 function SavedLocations() {
   const [savedLocations, setSavedLocations] = useState({}); // Use a more descriptive state name
@@ -59,21 +61,13 @@ console.log(weatherData);
   return (
     <div className="categoriesOfPlaces">
       <ul>
-        {Object.keys(weatherData).map((category)=> {(
-          <li key={category}>
+        {Object.keys(weatherData).map(category => (
+          <li key={category} > 
             <h2>{category}</h2>
-            <ul>
-              {weatherData[category].map((place) => (
-                <li key={place.placeName}>
-                  <h3>{place.placeName}</h3>
-                  <p>{place.weatherData.weather[0].description}</p>
-                </li>
-              ))}
-            </ul>
+            <PlaceCategory props={weatherData[category]}/>
           </li>
-        )})}
+        ))}
       </ul>
-      <PlaceCategory Favorites={weatherData.Favorites[0]} />
     </div>
   );
 }
