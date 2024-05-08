@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Search from '../components/Search';
-//import './AirPollution.css';
+import "../styles/AirPollution.css"
 
 const AirPollution = () => {
     const [search, setSearch] = useState('');
@@ -62,7 +62,7 @@ const AirPollution = () => {
             <Search search={search} setSearch={setSearch} handleSearch={handleSearch} />
             {city && (
                 <div className="city-info">
-                    <h2>Air Quality Index (AQI) for {city.name}</h2>
+                    <h2 className="aqi-data-heading">Air Quality Index (AQI) for {city.name}</h2>
                     {aqiData ? (
                         <div className="aqi-data">
                             <p>Time: {new Date(aqiData.list[0].dt * 1000).toLocaleString()}</p>
