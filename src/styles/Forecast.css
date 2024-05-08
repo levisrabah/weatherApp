@@ -7,6 +7,8 @@
     margin-top: 20px; /* Add space between search bar and city name */
     font-size: 1.8rem; /* Adjust font size */
     font-weight: bold; /* Make the text bold */
+    color:black;
+    text-align: center;
 }
 
 .forecast-day {
