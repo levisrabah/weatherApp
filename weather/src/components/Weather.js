@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"; // Importing necessary hooks from React
 import Search from "./Search"; // Importing the Search component
+import RestCountries from "./RestCountries"; // Importing the RestCountries component
 
 function Weather() {
     const [search, setSearch] = useState(''); // State to manage the search query
