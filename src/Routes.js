@@ -1,11 +1,11 @@
 // import any page to be rendered here 
-import HomePage from "./pages/Weather"
+import App from "./pages/App"
 import ErrorPage from "./pages/ErrorPage"
 import SavedLocations from "./pages/SavedLocations"
 const routes = [
     {
         path: '/',
-        element: <HomePage />,
+        element: <App />,
         errorElement:<ErrorPage/>
     },
     {
