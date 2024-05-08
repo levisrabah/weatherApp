@@ -1,3 +1,4 @@
+import '../styles/NavBar.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
