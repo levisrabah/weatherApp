@@ -14,3 +14,5 @@ export default function Search({ search, setSearch, handleSearch }) {
         </div>
     );
 }
+
+
