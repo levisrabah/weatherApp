@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
-//import "../styles/Forecast.css"
+import "../styles/Forecast.css"
 
 function Forecast() {
   const [forecastData, setForecastData] = useState(null);
