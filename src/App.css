@@ -149,3 +149,9 @@ body {
 .temperature-unit-selector input[type="radio"] {
   margin-right: 5px;
 }
+
+.alert {
+  color: rgb(86, 16, 16);
+  font-weight: bold;
+  font-size: 20px;
+}
