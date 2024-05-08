@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"; // Importing necessary hooks from React
 import Search from "./Search"; // Importing the Search component
-import RestCountries from "./RestCountries"; // Importing the RestCountries component
+import Alerts from "./Alerts";
 
 function Weather() {
     const [search, setSearch] = useState(''); // State to manage the search query
@@ -114,6 +114,11 @@ function Weather() {
                 error ? <div className="error">{error}</div> :
                     weatherData &&
                     <div>
+                        <Alerts // Highlight: Integrate the Alerts component
+                            location={weatherData.name}
+                            temperature={convertTemperature(weatherData.main.temp)}
+                            normalTemperature={25} // Assume normal temperature to be 25°C
+                        />
                         <div className="city-name">
                             <h2>{weatherData.name}, <span>{weatherData.sys.country}</span></h2>
                         </div>
