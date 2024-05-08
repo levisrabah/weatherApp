@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Search.css'
 
 export default function Search({ search, setSearch, handleSearch }) {
     return (

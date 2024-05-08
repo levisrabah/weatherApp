@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
-<<<<<<< HEAD
 import Search from '../components/Search'
 import '../styles/AirPollution.css';
-=======
-import Search from '../components/Search';
-import "../styles/AirPollution.css"
-import NavBar from '../components/NavBar';
->>>>>>> 5ee8c38 (Committing local changes before merge)
 
 const AirPollution = () => {
     const [search, setSearch] = useState('');
@@ -77,12 +71,7 @@ const AirPollution = () => {
     return (
         <div className="air-pollution-container">
             <h1>Air Pollution Information</h1>
-<<<<<<< HEAD
             <Search search={search} setSearch={setSearch} />
-=======
-            <NavBar />
-            <Search search={search} setSearch={setSearch} handleSearch={handleSearch} />
->>>>>>> 5ee8c38 (Committing local changes before merge)
             {city && (
                 <div className="city-info">
                     <h2 className="aqi-data-heading">Air Quality Index (AQI) for {city.name}</h2>

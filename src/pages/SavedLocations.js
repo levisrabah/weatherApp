@@ -1,7 +1,6 @@
 import "../styles/SavedLocations.css";
 import React, { useEffect, useState } from "react";
 import PlaceCategory from "../components/PlaceCategory";
-import NavBar from "../components/NavBar";
 
 
 function SavedLocations() {
@@ -61,7 +60,6 @@ console.log(weatherData);
   // Implement UI logic to display locations and weather data (replace placeholders)
   return (
     <div className="categoriesOfPlaces">
-      <NavBar />
       <ul>
         {Object.keys(weatherData).map(category => (
           <li key={category} > 
