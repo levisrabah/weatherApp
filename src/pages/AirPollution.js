@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Search from '../components/Search'
+<<<<<<< HEAD
+import NavBar from '../components/NavBar';
+import '../styles/AirPollution.css';
+=======
 import '../styles/AirPollution.css'
 import NavBar from '../components/NavBar';
+>>>>>>> d7bec8d7ca8207d18b0a64f6bf3add876207d1d6
 
 const AirPollution = () => {
     const [search, setSearch] = useState('');
@@ -70,6 +75,10 @@ const AirPollution = () => {
     };
 
     return (
+        <>
+        <div>
+            <NavBar />
+        </div>
         <div className="air-pollution-container">
             <NavBar />
             <h1>Air Quality Information</h1>
@@ -109,6 +118,7 @@ const AirPollution = () => {
                 </p>
             </div>
         </div>
+        </>
     );
 };
 

@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack links vertically on small screens */
+      align-items: center; /* Center links vertically */
+    }
+  
+    .nav-links {
+      flex-direction: column; /* Arrange links vertically on small screens */
+    }
+  
+    .nav-link {
+      margin: 0.5rem 0; /* Adjust spacing for stacked links */
+    }
+  }
+.navbar {
+    background-color: #20232a; /* Adjust background color as desired */
+    color: #fff; /* Adjust text color as desired */
+    display: flex; /* Makes navbar items side-by-side */
+    justify-content: space-between; /* Spreads items horizontally */
+    padding: 1rem 2rem; /* Add padding for spacing */
+  }
+  
+  .nav-links {
+    display: flex; /* Maintain arrangement of links */
+    /* Remove default list styles (optional) */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from navbar */
+    padding: 0.5rem 1rem; /* Add padding for box appearance */
+    margin-right: 1rem; /* Maintain spacing between boxes */
+    background-color: #333; /* Add background color to boxes */
+    color: #fff; /* Maintain white text for boxes */
+    font-size: 1rem; /* Adjust font size as desired */
+    font-weight: bold; /* Bold text */
+    border-radius: 4px; /* Add rounded corners for boxes */
+    display: flex; /* Make link behave like a block element */
+    align-items: center; /* Center text vertically within boxes */
+    justify-content: center; /* Center text horizontally within boxes */
+    /* Optional styling for full-width boxes (uncomment if desired) */
+    /* width: 100%; */  /* Adjust width as needed */
+  }
+  
+  .nav-link:hover {
+    background-color: #222; /* Change box color on hover */
+  }
+  

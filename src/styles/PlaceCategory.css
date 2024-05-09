@@ -1,0 +1,39 @@
+.weather-info {
+    display: flex; /* Arrange wind and humidity side-by-side */
+    justify-content: space-between; /* Spread items horizontally */
+    margin-top: 1rem; /* Add spacing after description */
+  }
+  
+  .column{
+    display: flex;
+    align-items: center;
+    line-height: 1px;
+  }
+  
+  .wind,
+  .humidity {
+    font-weight: bold; /* Make weather info labels bolder */
+    margin-bottom: 0.5rem; /* Add spacing below labels */
+  }
+  
+  .city-name,
+  .date,
+  .description {
+    margin-bottom: 0.5rem; /* Add spacing between elements */
+  }
+  
+  h2 {
+    font-size: 1.2rem; /* Adjust heading size as desired */
+    margin-bottom: 0.5rem; /* Add spacing below heading */
+  }
+  
+  img {
+    width: 100px; /* Adjust image size as desired */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Add spacing below image */
+  }
+  
+  .description {
+    font-style: italic; /* Italicize description text */
+  }
+  
