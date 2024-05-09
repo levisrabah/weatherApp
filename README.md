@@ -3,7 +3,7 @@
 Welcome to this weather app. Experience extremely accurate weather data of any place around the world presented beautifuly on your device.
 
 ## Overview:
-The React Weather App is a simple web application that allows users to check the weather conditions for a specific location. It provides current weather data as well as a forecast for the upcoming days.
+This Weather App is a simple web application that allows users to check the weather conditions for a specific location. It provides current weather data as well as a forecast for the upcoming days.
 
 ## Features:
 ### Search Functionality:
