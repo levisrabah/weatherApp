@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
-import "../styles/Forecast.css"
+import "../styles/Forecast.css";
+import NavBar from "../components/NavBar";
 
 function Forecast() {
   const [forecastData, setForecastData] = useState(null);
@@ -94,6 +95,7 @@ function Forecast() {
 
   return (
     <div className="forecast">
+      <NavBar />
       <h1>Forecast</h1>
       <Search
         search={search}

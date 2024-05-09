@@ -1,3 +1,4 @@
+import '../styles/NavBar.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
@@ -14,11 +15,7 @@ import { Switch } from 'react-router-dom';
                             <Link to="/forecast" className="navlink">Forecast</Link> {/* Apply the "navlink" class */}
                         </li>
                         <li>
-                            <Link to="/airpollution" className="navlink">Air Quality</Link> {/* Apply the "navlink" class */}
-                        </li>
-                        <li>
-                            <Link to="/SavedLocations" className="navlink">Saved Locations</Link> {/* Apply the "navlink" class */}
-                        </li>
+                            <Link to="/airpollution" className="navlink">Air Quality</Link> {/* Apply the "navlink" class */
                     </ul>
                 </nav> 
             </div>
