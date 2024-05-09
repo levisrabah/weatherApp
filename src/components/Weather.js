@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"; // Importing necessary hooks from React
 import Search from "./Search"; // Importing the Search component
 import Alerts from "./Alerts";
-
+import SaveNation from "./SaveLocation";
 function Weather() {
     const [search, setSearch] = useState(''); // State to manage the search query
     const [loading, setLoading] = useState(false); // State to manage loading status
@@ -110,6 +110,7 @@ function Weather() {
                 setSearch={setSearch}
                 handleSearch={handleSearch}
             />
+            <SaveNation weatherData={weatherData}/>
             {loading ? <div className="loading">Loading...</div> :
                 error ? <div className="error">{error}</div> :
                     weatherData &&
