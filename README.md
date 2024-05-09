@@ -5,7 +5,8 @@
 #### By *Sharon Byegon, Levis Rabah, Ephy Wachira, Maria Kamau, Jonah Mwangala*
 
 ## Overview
-Welcome to this weather app. Experience extremely accurate weather data of any place around the world presented beautifully on your device.
+Welcome to this weather app. A user-friendly weather app that provides everything you need. Get real-time updates, hyper-local forecasts, air quality data, personalized alerts, and seamless location management. <br>
+Our app empowers you to make informed decisions for every adventure and prioritize your well-being.
 
 ## Features
 1. **Permission Prompt:** Upon launching the app, a browser dialog appears asking the user for permission to access their location. This dialog is provided by the browser and is controlled by the Geolocation API.
