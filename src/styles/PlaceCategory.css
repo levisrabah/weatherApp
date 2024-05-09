@@ -10,16 +10,14 @@
     line-height: 1px;
   }
   
-  .wind,
-  .humidity {
-    font-weight: bold; /* Make weather info labels bolder */
-    margin-bottom: 0.5rem; /* Add spacing below labels */
-  }
+  
   
   .city-name,
   .date,
   .description {
-    margin-bottom: 0.5rem; /* Add spacing between elements */
+    margin-bottom: 0.5rem;
+    text-align: center;
+    /* Add spacing between elements */
   }
   
   h2 {
