@@ -9,7 +9,7 @@ function PlaceCategory ({props}){
              props.map(prop=>{
                 console.log(prop)
             return(
-            <>
+            <div>
              <div className="city-name">
              <h2>{prop.placeName}</h2>
              <span>{prop.weatherData.sys.country}</span>
@@ -18,16 +18,12 @@ function PlaceCategory ({props}){
             <div className="date">
                 <span>{new Date().toLocaleDateString()}</span>
              </div>
-             <img src={getWeatherIconUrl(prop.weatherData.weather[0].icon)} alt="Weather Icon" />
+             <img src={getWeatherIconUrl(prop.weatherData.weather[0].icon)} alt="Weather Icon" id="icon"/>
              <p className="description">
                 {prop.weatherData.weather[0].description}
              </p>
              <div className="weather-info">
-                            <div className=".wind,
-  .humidity {
-    font-weight: bold; /* Make weather info labels bolder */
-    margin-bottom: 0.5rem; /* Add spacing below labels */
-  }column">
+                            <div className="column">
                                 <div>
                                     <p className="wind">{prop.weatherData.wind.speed} m/s</p>
                                     <p>Wind Speed</p>
@@ -40,7 +36,7 @@ function PlaceCategory ({props}){
                                 </div>
                             </div>
                         </div>
-            </>
+            </div>
         )})}
         </div>
     )
