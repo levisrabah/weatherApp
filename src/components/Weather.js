@@ -48,9 +48,12 @@ function Weather() {
 
     function convertTemperature(temp) {
         if (unit === 'metric') {
-            return temp; // Convert temperature to desired unit (Celsius or Fahrenheit)
+            return Math.round(temp); // Convert temperature to desired unit (Celsius or Fahrenheit)
         } else {
-            return (temp * 9 / 5) + 32;
+            return(
+               Math.round ((temp * 9 / 5) + 32)
+            )
+
         }
     }
 
@@ -105,6 +108,22 @@ function Weather() {
         }
     }, [search, unit]); // Run effect when search query or unit changes
 
+    function formatDateTime() {
+        const currentDate = new Date();
+        const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            
+            
+        };
+        return currentDate.toLocaleDateString('en-US', options);
+    }
+
+
     return (
         <div>
             <Search
@@ -126,7 +145,7 @@ function Weather() {
                             <h2>{weatherData.name}, <span>{weatherData.sys.country}</span></h2>
                         </div>
                         <div className="date">
-                            <span>{new Date().toLocaleDateString()}</span>
+                        <span>{formatDateTime()}</span>
                         </div>
                         <div className="temp">{convertTemperature(weatherData.main.temp)}°</div>
                         <div className="temperarure-unit-selector">
@@ -156,6 +175,7 @@ function Weather() {
                         <p className="description">
                             {weatherData.weather[0].description}
                         </p>
+                        <br />
                         <div className="weather-info">
                             <div className="column">
                                 <div>
