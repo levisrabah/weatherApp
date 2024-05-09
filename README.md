@@ -8,6 +8,8 @@
 Welcome to this weather app. A user-friendly weather app that provides everything you need. Get real-time updates, hyper-local forecasts, air quality data, personalized alerts, and seamless location management. <br>
 Our app empowers you to make informed decisions for every adventure and prioritize your well-being.
 
+![awe weather](https://github.com/B-Sharon/weatherApp/blob/main/demo.png)
+
 ## Features
 1. **Permission Prompt:** Upon launching the app, a browser dialog appears asking the user for permission to access their location. This dialog is provided by the browser and is controlled by the Geolocation API.
 2. **Search Functionality:** Users can search for weather information by entering the name of a city or location.
