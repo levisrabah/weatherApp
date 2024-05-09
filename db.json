@@ -1,18 +1,47 @@
 {
-    "Favorites": [
-      { "id": 1, "name": "Nairobi" },
-      { "id": 2, "name": "Tanzania" }],
-    "StarredPlaces": [
-      { "id": 1, "name": "Sudan" },
-      { "id": 2, "name": "Cairo" }
-    ],
-    "WantToGo": [
-      { "id": 1, "name": "USA" },
-      { "id": 2, "name": "Cameroon" }
-    ],
-    "ToTravel": [
-      { "id": 1, "name": "Zimbabwe" },
-      { "id": 2, "name": "Canada" }
-    ]
-  }
-  
+  "Favorites": [
+    {
+      "id": 1,
+      "name": "Nairobi"
+    },
+    {
+      "id": 2,
+      "name": "Tanzania"
+    },
+    {
+      "id": "c60e",
+      "name": "Mombasa"
+    }
+  ],
+  "StarredPlaces": [
+    {
+      "id": 1,
+      "name": "Sudan"
+    },
+    {
+      "id": 2,
+      "name": "Cairo"
+    }
+  ],
+  "WantToGo": [
+    {
+      "id": 1,
+      "name": "USA"
+    },
+    {
+      "id": 2,
+      "name": "Cameroon"
+    }
+  ],
+  "ToTravel": [
+    {
+      "id": 1,
+      "name": "Zimbabwe"
+    },
+    {
+      "id": 2,
+      "name": "Canada"
+    }
+  ],
+  "autoIncrement": 3
+}
