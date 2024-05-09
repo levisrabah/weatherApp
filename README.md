@@ -28,7 +28,7 @@ Our app empowers you to make informed decisions for every adventure and prioriti
 
 ## Technologies Used
 - **React:** The app is built using the React library, which allows for efficient and modular development of user interfaces.
-- **OpenWeatherMap API:** Weather data is retrieved using the OpenWeatherMap API, which provides accurate and up-to-date weather information for locations worldwide.
+- **OpenWeatherMap API:**  Weather data is retrieved using the [OpenWeatherMap API](https://openweathermap.org/), which provides accurate and up-to-date weather information for locations worldwide.
 
 ## Installation
 1. Clone the repository to your local machine.
