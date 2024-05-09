@@ -1,0 +1,17 @@
+.air-pollution-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.air-pollution-container h2 {
+    margin-top: 20px;
+}
+.aqi-category {
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; 
+    color: #ff6347; 
+}
+.aqi-data, .aqi-data-heading, .info-section{
+    text-align: center;
+}

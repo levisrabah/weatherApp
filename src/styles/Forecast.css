@@ -1,0 +1,50 @@
+
+.search-bar-container {
+    margin-bottom: 20px;
+}
+
+.city-name {
+    margin-top: 20px; /* Add space between search bar and city name */
+    font-size: 1.8rem; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color:black;
+    text-align: center;
+}
+
+.forecast-day {
+    margin-bottom: 20px;
+}
+
+.forecast-items {
+    white-space: nowrap; /* Prevent items from wrapping */
+    overflow-x: auto; /* Add horizontal scrollbar if items overflow */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    
+}
+
+.forecast-item {
+    display: inline-block; /* Display items inline */
+    width: 200px; /* Set a fixed width for each item */
+    margin-right: 10px; /* Add some space between items */
+    padding: 10px; /* Add padding to each item */
+    border: 1px solid #ccc; /* Add border for visibility */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    background-color: rgb(168, 146, 146);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.forecast-item:hover {
+    transform: translateY(-10px); /* Increase the amount of translation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the strength of the box shadow */
+    z-index: 1; /* Ensure the hovered card appears above other cards */
+}
+
+.forecast-item > div {
+    margin-bottom: 5px;
+}
+
+.forecast-item img {
+    width: 50px; /* Set a fixed width for weather icon */
+    height: 50px; /* Set a fixed height for weather icon */
+    margin-bottom: 5px;
+}
