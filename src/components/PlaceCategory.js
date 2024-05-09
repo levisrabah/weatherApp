@@ -23,7 +23,11 @@ function PlaceCategory ({props}){
                 {prop.weatherData.weather[0].description}
              </p>
              <div className="weather-info">
-                            <div className="column">
+                            <div className=".wind,
+  .humidity {
+    font-weight: bold; /* Make weather info labels bolder */
+    margin-bottom: 0.5rem; /* Add spacing below labels */
+  }column">
                                 <div>
                                     <p className="wind">{prop.weatherData.wind.speed} m/s</p>
                                     <p>Wind Speed</p>
