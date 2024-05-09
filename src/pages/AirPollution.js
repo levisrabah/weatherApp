@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Search from '../components/Search'
-import '../styles/AirPollution.css';
+import '../styles/AirPollution.css'
+import NavBar from '../components/NavBar';
 
 const AirPollution = () => {
     const [search, setSearch] = useState('');
@@ -70,6 +71,7 @@ const AirPollution = () => {
 
     return (
         <div className="air-pollution-container">
+            <NavBar />
             <h1>Air Pollution Information</h1>
             <Search search={search} setSearch={setSearch} />
             {city && (
