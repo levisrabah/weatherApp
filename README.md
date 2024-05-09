@@ -14,12 +14,15 @@ Our app empowers you to make informed decisions for every adventure and prioriti
 3. **Current Weather Display:** The app displays the current weather conditions, including temperature, wind speed, humidity, and a brief description of the weather.
 4. **Temperature Unit Selector:** Users can toggle between Celsius and Fahrenheit units to view temperature according to their preference.
 5. **Forecast Display:** The app also provides a forecast for the upcoming days, showing the expected weather conditions and temperatures.
-6. **Error Handling:** If there are any errors during the weather data retrieval process, the app gracefully handles them and notifies the user.
+6. **Air Pollution Index (API) Feature:** Provides users with a numerical representation of air quality based on the concentration of various pollutants in the air. Users can monitor the API to make informed decisions about outdoor activities and take precautions to protect their health.
+7. **Error Handling:** If there are any errors during the weather data retrieval process, the app gracefully handles them and notifies the user.
 
 ## How to Use
 1. **Search:** Enter the name of a city or location in the search bar and press enter or click the search button.
 2. **View Weather:** Once the search is complete, the app will display the current weather information and forecast for the specified location.
 3. **Toggle Temperature Units:** Use the radio buttons to switch between Celsius and Fahrenheit units for temperature display.
+4. **Monitor Air Quality:** Check the Air Pollution Index (API) feature to gauge the air quality in your area. The API is displayed on a scale ranging from 0 to 500, with corresponding air quality categories. Take necessary precautions based on the current API level to protect your health and well-being.
+
 
 ## Technologies Used
 - **React:** The app is built using the React library, which allows for efficient and modular development of user interfaces.
