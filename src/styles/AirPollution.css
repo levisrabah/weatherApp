@@ -2,16 +2,61 @@
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
-}
+    margin-top: 40px;
+  }
 
-.air-pollution-container h2 {
-    margin-top: 20px;
-}
-.aqi-category {
-    font-size: 1.2rem; /* Adjust font size */
-    font-weight: bold; 
-    color: #ff6347; 
-}
-.aqi-data, .aqi-data-heading, .info-section{
+  .air-pollution-container h1 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: #333;
     text-align: center;
-}
+  }
+  
+  .city-info {
+    margin-top: 20px;
+  }
+  
+  .aqi-data-heading {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .aqi-data {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .aqi-data p {
+    margin-bottom: 10px;
+  }
+  
+  .aqi-category {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6347;
+  }
+  
+  .info-section {
+    margin-top: 40px;
+  }
+  
+  .info-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .info-section p {
+    margin-bottom: 10px;
+    text-align: center;
+
+  }

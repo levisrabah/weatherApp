@@ -1,23 +1,25 @@
 body {
-  margin: 0;
-  padding: 0;
+    background-image: url('./styles/rodion-kutsaiev-PEm_sLmJT-w-unsplash.jpg'); /* Replace 'your-background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.75; /* Adjust opacity as needed */
+
 }
 
 .App {
   text-align: center;
   margin: 50px auto 0;
   width: 100%;
-  max-width: 1000px;
   border-radius: 20px;
   height: 5000px;
   padding: 20px 15px;
-  background:  #30197d
+  background: gray;
 }
 
 .search-engine {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -27,17 +29,31 @@ body {
   width: 70%;
   height: 45px;
   border: 1px solid;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 2px 15px;
   font-size: 16px;
   outline: none;
-  background-color: #ffffff;
+  background-color: #fff;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   color: #555555;
+  padding-left: 100px;
+}
+.input {
+  margin: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
 }
 
 .search-engine button {
   border: none;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: #000000;
   color: #ffffff;
   font-weight: 20px;
@@ -47,7 +63,9 @@ body {
 }
 .city-name{
   margin-bottom: 10px;
-  color: #ffffff;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: black;
 }
 .loading{
   font-size: 60px;
@@ -58,7 +76,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   font-style: inherit;
-  color: #ffffff;
+  color: black;
 }
 .temp{
   font-size: 70px;
@@ -130,4 +148,10 @@ body {
 
 .temperature-unit-selector input[type="radio"] {
   margin-right: 5px;
+}
+
+.alert {
+  color: rgb(86, 16, 16);
+  font-weight: bold;
+  font-size: 20px;
 }

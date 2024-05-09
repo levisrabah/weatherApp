@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Search from '../components/Search'
+<<<<<<< HEAD
 import NavBar from '../components/NavBar';
 import '../styles/AirPollution.css';
+=======
+import '../styles/AirPollution.css'
+import NavBar from '../components/NavBar';
+>>>>>>> d7bec8d7ca8207d18b0a64f6bf3add876207d1d6
 
 const AirPollution = () => {
     const [search, setSearch] = useState('');
@@ -75,7 +80,8 @@ const AirPollution = () => {
             <NavBar />
         </div>
         <div className="air-pollution-container">
-            <h1>Air Pollution Information</h1>
+            <NavBar />
+            <h1>Air Quality Information</h1>
             <Search search={search} setSearch={setSearch} />
             {city && (
                 <div className="city-info">
@@ -95,7 +101,7 @@ const AirPollution = () => {
                 </div>
             )}
             <div className="info-section">
-                <h3>Understanding Air Pollution</h3>
+                <h3>Understanding AQI</h3>
                 <p>
                     The Air Quality Index (AQI) provides information about the quality of the air we breathe.
                     It measures the concentration of pollutants such as PM2.5, PM10, Ozone, and Nitrogen Dioxide.

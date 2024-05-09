@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
+<<<<<<< HEAD
 import NavBar from "../components/NavBar";
 import "../styles/Forecast.css"
+=======
+import "../styles/Forecast.css";
+import NavBar from "../components/NavBar";
+>>>>>>> d7bec8d7ca8207d18b0a64f6bf3add876207d1d6
 
 function Forecast() {
   const [forecastData, setForecastData] = useState(null);
@@ -99,7 +104,9 @@ function Forecast() {
       <NavBar />
     </div>
     <div className="forecast">
+      <NavBar />
       <h1>Forecast</h1>
+      <br />
       <Search
         search={search}
         setSearch={setSearch}

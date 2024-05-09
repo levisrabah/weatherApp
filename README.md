@@ -5,6 +5,9 @@ Welcome to this weather app. Experience extremely accurate weather data of any p
 This Weather App is a simple web application that allows users to check the weather conditions for a specific location. It provides current weather data as well as a forecast for the upcoming days.
 
 ## Features:
+
+### Permission Prompt
+Upon launching the app, a browser dialog appears asking the user for permission to access their location. This dialog is provided by the browser and is controlled by the Geolocation API.
 ### Search Functionality:
 Users can search for weather information by entering the name of a city or location.
 ### Current Weather Display:
