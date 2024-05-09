@@ -1,6 +1,5 @@
-
 # Weather App
-Welcome to this weather app. Experience extremely accurate weather data of any place around the world presented beautifuly on your device.
+Welcome to this weather app. Experience extremely accurate weather data of any place around the world presented beautifully on your device.
 
 ## Overview:
 This Weather App is a simple web application that allows users to check the weather conditions for a specific location. It provides current weather data as well as a forecast for the upcoming days.
@@ -38,8 +37,29 @@ Weather data is retrieved using the OpenWeatherMap API, which provides accurate 
 4. Run npm start to start the development server.
 5. Open your web browser and navigate to http://localhost:3000 to view the app.
 
+## Enhancing Content:
+
+### Screenshots:
+![Homepage][../images/HomePage.png]
+
+### "Extremely Accurate" Claims:
+Warning!We Cannot be held liable for any mistakes or msinformation caused by data from the Api (https://openweathermap.org/api)
+
+### Forecast Display:
+![Forcast Display][../images/ForcastDisplay.png]
+
+### Example Error Handling:
+Example Error Handling: Provide a concrete example of how the app handles errors (e.g., "If the city is not found, the app displays a message informing the user").
+
+
+### Link to OpenWeatherMap API:
+Link to OpenWeatherMap API:A link to the OpenWeatherMap API documentation (https://openweathermap.org/api) for users who want to learn more about the data source.
+
+### License Badge:
+Consider using a badge for the MIT License: You can use a service like https://shields.io/ to generate a badge for the MIT License and add it to the License section.
+
 ## Credits:
-This app was created by Sharon Byegon, Levis Rabah, Ephy Wachira, Maria Kamau and Jonah Mwangala, as a learning project.
+This app was created by Sharon Byegon, Levis Rabah, Ephy Wachira, Maria Kamau, and Jonah Mwangala as a learning project.
 Weather data is provided by the OpenWeatherMap API.
 
 ## License:

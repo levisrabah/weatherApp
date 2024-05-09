@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
+import NavBar from "../components/NavBar";
 import "../styles/Forecast.css"
 
 function Forecast() {
@@ -93,6 +94,10 @@ function Forecast() {
   }
 
   return (
+    <>
+    <div>
+      <NavBar />
+    </div>
     <div className="forecast">
       <h1>Forecast</h1>
       <Search
@@ -142,6 +147,7 @@ function Forecast() {
         </div>
       ) : null}
     </div>
+    </>
   );
 }
 

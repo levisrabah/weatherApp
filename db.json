@@ -11,6 +11,14 @@
     {
       "id": "c60e",
       "name": "Mombasa"
+    },
+    {
+      "id": "c0a0",
+      "name": "Rwanda"
+    },
+    {
+      "id": "a9cb",
+      "name": "Nairobi"
     }
   ],
   "StarredPlaces": [
@@ -21,6 +29,10 @@
     {
       "id": 2,
       "name": "Cairo"
+    },
+    {
+      "id": "d253",
+      "name": "Rwanda"
     }
   ],
   "WantToGo": [
@@ -31,6 +43,14 @@
     {
       "id": 2,
       "name": "Cameroon"
+    },
+    {
+      "id": "be85",
+      "name": "Durban"
+    },
+    {
+      "id": "5e84",
+      "name": "Durban"
     }
   ],
   "ToTravel": [
@@ -41,6 +61,14 @@
     {
       "id": 2,
       "name": "Canada"
+    },
+    {
+      "id": "b896",
+      "name": "Sydney"
+    },
+    {
+      "id": "dd43",
+      "name": "Sydney"
     }
   ],
   "autoIncrement": 3

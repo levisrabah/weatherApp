@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/PlaceCategory.css";
 function PlaceCategory ({props}){
     function getWeatherIconUrl(iconCode) {
         return `https://openweathermap.org/img/wn/${iconCode}.png`; // Function to get weather icon URL
@@ -10,9 +11,10 @@ function PlaceCategory ({props}){
             return(
             <>
              <div className="city-name">
+             <h2>{prop.placeName}</h2>
              <span>{prop.weatherData.sys.country}</span>
              </div>
-            <h2>{prop.placeName}</h2>
+            
             <div className="date">
                 <span>{new Date().toLocaleDateString()}</span>
              </div>
