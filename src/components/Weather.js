@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"; // Importing necessary hooks from R
 import Search from "./Search"; // Importing the Search component
 import Alerts from "./Alerts";
 import SaveNation from "./SaveLocation";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function Weather() {
     const [search, setSearch] = useState(''); // State to manage the search query
     const [loading, setLoading] = useState(false); // State to manage loading status

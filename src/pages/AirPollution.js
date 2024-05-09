@@ -72,7 +72,7 @@ const AirPollution = () => {
     return (
         <div className="air-pollution-container">
             <NavBar />
-            <h1>Air Pollution Information</h1>
+            <h1>Air Quality Information</h1>
             <Search search={search} setSearch={setSearch} />
             {city && (
                 <div className="city-info">
@@ -92,7 +92,7 @@ const AirPollution = () => {
                 </div>
             )}
             <div className="info-section">
-                <h3>Understanding Air Pollution</h3>
+                <h3>Understanding AQI</h3>
                 <p>
                     The Air Quality Index (AQI) provides information about the quality of the air we breathe.
                     It measures the concentration of pollutants such as PM2.5, PM10, Ozone, and Nitrogen Dioxide.

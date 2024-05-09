@@ -97,6 +97,7 @@ function Forecast() {
     <div className="forecast">
       <NavBar />
       <h1>Forecast</h1>
+      <br />
       <Search
         search={search}
         setSearch={setSearch}

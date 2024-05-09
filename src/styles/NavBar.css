@@ -16,7 +16,7 @@
 
 .nav-title, .nav-title h1 {
     flex: auto;
-    text-align: left;
+    text-align: center;
     color: #f3f4f5;
     margin: 0;
     font-size: 30px;
@@ -38,7 +38,7 @@
 }
 
 .navlink:hover {
-    color: purple;
+    color: rgb(100, 67, 192);
 }
 
 .navlink:active {
