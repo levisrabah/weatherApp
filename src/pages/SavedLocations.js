@@ -67,10 +67,12 @@ console.log(weatherData);
     <div className="categoriesOfPlaces">
       <ul>
         {Object.keys(weatherData).map(category => (
+          <>
+          <h1>{category}</h1>
           <li key={category} > 
-            <h2>{category}</h2>
             <PlaceCategory props={weatherData[category]}/>
           </li>
+          </>
         ))}
       </ul>
     </div>

@@ -34,4 +34,7 @@
   .description {
     font-style: italic; /* Italicize description text */
   }
+  img#icon{
+    align-items: center;
+  }
   

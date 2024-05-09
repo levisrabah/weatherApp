@@ -1,35 +1,11 @@
 {
   "Favorites": [
     {
-      "id": 1,
-      "name": "Nairobi"
-    },
-    {
-      "id": 2,
-      "name": "Tanzania"
-    },
-    {
-      "id": "c60e",
-      "name": "Mombasa"
-    },
-    {
       "id": "c0a0",
       "name": "Rwanda"
-    },
-    {
-      "id": "a9cb",
-      "name": "Nairobi"
     }
   ],
   "StarredPlaces": [
-    {
-      "id": 1,
-      "name": "Sudan"
-    },
-    {
-      "id": 2,
-      "name": "Cairo"
-    },
     {
       "id": "d253",
       "name": "Rwanda"
@@ -37,35 +13,11 @@
   ],
   "WantToGo": [
     {
-      "id": 1,
-      "name": "USA"
-    },
-    {
-      "id": 2,
-      "name": "Cameroon"
-    },
-    {
       "id": "be85",
-      "name": "Durban"
-    },
-    {
-      "id": "5e84",
       "name": "Durban"
     }
   ],
   "ToTravel": [
-    {
-      "id": 1,
-      "name": "Zimbabwe"
-    },
-    {
-      "id": 2,
-      "name": "Canada"
-    },
-    {
-      "id": "b896",
-      "name": "Sydney"
-    },
     {
       "id": "dd43",
       "name": "Sydney"
